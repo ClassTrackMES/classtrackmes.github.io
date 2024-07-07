@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ClassTrack - Information</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            transition: background-color 0.3s, color 0.3s;
+            background: linear-gradient(135deg, #22bdb6, #1e90ff);
+            color: #ffffff;
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            margin-top: 2rem;
+        }
+        .logo {
+            max-width: 100px;
+            border-radius: 8px;
+        }
+        .header {
+            padding: 2rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .section {
+            margin-bottom: 2rem;
+        }
+        .section-title {
+            margin-bottom: 1rem;
+            cursor: pointer;
+        }
+        .card-header {
+            width: 80%;
+            background-color: #1e1e1e;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            padding: 1.5rem;
+            border-radius: 8px;
+            transition: background-color 0.3s, box-shadow 0.3s;
+            text-align: center;
+        }
+        .card-panel {
+            background-color: #1e1e1e;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            padding: 1.5rem;
+            border-radius: 8px;
+            transition: background-color 0.3s, box-shadow 0.3s;
+        }
+        .sidenav {
+            background-color: #1f1f1f;
+        }
+        .sidenav-link {
+            color: #ffffff !important;
+        }
+        .nav-wrapper {
+            background-color: #1f1f1f;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            padding: 0 1rem;
+            transition: background-color 0.3s, box-shadow 0.3s;
+        }
+        h1 {
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        a {
+            color: #009697;
+            transition: color 0.3s, text-decoration 0.3s;
+        }
+        img {
+            background-color: rgba(255, 255, 255, 0.5);
+        }
+        strong {
+            font-weight: bold;
+        }
+
+        @media (max-width: 992px) {
+            .nav-wrapper ul.left {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Menu -->
+    <div class="navbar-fixed">
+        <nav>
+            <div class="nav-wrapper">
+                <a href="#page-title" class="brand-logo center">ClassTrack</a>
+                <a href="#" data-target="mobile-nav" class="sidenav-trigger"><i class="material-icons">☰</i></a>
+                <ul id="nav-mobile" class="left hide-on-med-and-down">
+                    <li><a href="#application-objectives">Objectives</a></li>
+                    <li><a href="#user-characterization">Users</a></li>
+                    <li><a href="#technological-solution">Technology</a></li>
+                    <li><a href="#system-architecture">Architecture</a></li>
+                    <li><a href="#user-testing">Testing</a></li>
+                    <li><a href="#system-solves">Solutions</a></li>
+                    <li><a href="#system-features">Features</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <ul class="sidenav" id="mobile-nav">
+        <li><a class="sidenav-link" href="#application-objectives">Objectives</a></li>
+        <li><a class="sidenav-link" href="#user-characterization">Users</a></li>
+        <li><a class="sidenav-link" href="#technological-solution">Technology</a></li>
+        <li><a class="sidenav-link" href="#system-architecture">Architecture</a></li>
+        <li><a class="sidenav-link" href="#user-testing">Testing</a></li>
+        <li><a class="sidenav-link" href="#system-solves">Solutions</a></li>
+        <li><a class="sidenav-link" href="#system-features">Features</a></li>
+    </ul>
+
+    <div class="container">
+        <!-- Header -->
+        <div class="center-align scrollspy header" id="page-title">
+            <img src="https://www.ips.pt/ips_si/imagens/_ips-logotipo-site-2023" alt="Institution Logo" class="logo responsive-img">
+            <h1>ClassTrack</h1>
+            <div class="card-header">
+            <p><strong>Developed by:</strong></p>
+            <p>Diogo Guerreiro, João da Gomes, Rafael Marçalo e Uliana Pyrohovska</p>
+            <p>Instituto Politécnico de Setúbal</p>
+            <p><strong>Mestrado em Engenharia de Software</strong></p>
+            </div>
+        </div>
+
+        <!-- Application Objectives -->
+        <div id="application-objectives" class="section card-panel scrollspy">
+            <h5 class="section-title">Application Objectives</h5>
+            <p>The ClassTrack application aims to simplify access to classrooms and scheduling through QR code scanning. With our application, users can easily scan the QR code on a classroom door to instantly access its schedule.</p>
+        </div>
+
+        <!-- User Characterization -->
+        <div id="user-characterization" class="section card-panel scrollspy">
+            <h5 class="section-title">User Characterization</h5>
+            <p>The primary users of ClassTrack are students, teachers, and administrative staff who need quick and efficient access to classroom and schedule information.</p>
+        </div>
+
+        <!-- Technological Solution -->
+        <div id="technological-solution" class="section card-panel scrollspy">
+            <h5 class="section-title">Technological Solution</h5>
+            <p>The application is developed using the Flutter framework, allowing us to create a native experience for both iOS and Android platforms. QR code integration enables users to quickly scan the necessary information.</p>
+        </div>
+
+        <!-- System Architecture -->
+        <div id="system-architecture" class="section card-panel scrollspy">
+            <h5 class="section-title">System Architecture</h5>
+            <p>The system architecture consists of a Flutter mobile application, a backend for data management, and a database for storing schedule and classroom information. Communication between the application and the backend(Django) is done through REST APIs.</p>
+        </div>
+
+        <!-- User Testing -->
+        <div id="user-testing" class="section card-panel scrollspy">
+            <h5 class="section-title">User Testing</h5>
+            <p>We conducted various tests with real users to ensure the usability and efficiency of the application. User feedback was crucial for making continuous adjustments and improvements.</p>
+        </div>
+
+        <!-- What the System Solves After Testing -->
+        <div id="system-solves" class="section card-panel scrollspy">
+            <h5 class="section-title">What the System Solves After Testing</h5>
+            <p>After testing, the system was optimized to provide an intuitive and fast user experience. Users can now access classroom and schedule information more efficiently and without complications.</p>
+        </div>
+
+        <!-- System Features -->
+        <div id="system-features" class="section card-panel scrollspy">
+            <h5 class="section-title">System Features</h5>
+            <ul>
+                <li><strong>Use of specific hardware:</strong> Requires a mobile device with a camera for QR code scanning.</li>
+                <li><strong>Integration of user metrics:</strong> Usage data analysis for continuous improvements.</li>
+                <li><strong>Portability:</strong> Compatible with iOS and Android devices.</li>
+                <li><strong>Usability:</strong> User-friendly and intuitive interface.</li>
+                <li><strong>Scalability:</strong> Capable of supporting a large number of simultaneous users.</li>
+                <li><strong>Efficiency:</strong> Quick access to information through QR code scanning.</li>
+                <li><strong>Reliability:</strong> Robust and reliable system.</li>
+                <li><strong>Security:</strong> Protection of user data.</li>
+                <li><strong>Ease of maintenance:</strong> Modular structure that facilitates maintenance and updates.</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Materialize JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var elems = document.querySelectorAll('.scrollspy');
+            var instances = M.ScrollSpy.init(elems, {
+                scrollOffset: 64
+            });
+
+            // Initialize Materialize components
+            var sidenav = document.querySelector('.sidenav');
+            var sidenavInstance = M.Sidenav.init(sidenav);
+        });
+    </script>
+</body>
+</html>
